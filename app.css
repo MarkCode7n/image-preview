@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #ea5455;
+  line-height: 2;
+  font-weight: 500;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .header h1 {
+  display: inline-block;
+  position: relative;
+  font-size: 2.5rem;
+  color: #ffd460;
+  text-transform: capitalize;
+}
+
+.container .header h1::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 4px;
+  background-color: #2d4059;
+}
+
+.container .image_container__ .image_div {
+  border: 4px solid #ffd460;
+  margin-top: 40px;
+  height: 300px;
+  border-radius: 30px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 400px;
+  overflow: hidden;
+}
+
+.container .image_container__ .image_div span {
+  text-align: center;
+  font-size: 18px;
+  color: #ddd;
+}
+
+.container .image_container__ .image_div .image {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.container input[type="file"] {
+  width: 200px;
+  border: 2px solid #ffd460;
+  background-color: greenyellow;
+  padding: 3px;
+  margin: 20px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */
