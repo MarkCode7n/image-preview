@@ -1,11 +1,14 @@
-window.addEventListener("DOMContentLoaded",()=>{
+const $ = id => "string" == typeof id:document.querySelector(id):id
+
+$(window).addEventListener("DOMContentLoaded",()=>{
     !(()=>{
 
-        const container__elem = document.querySelector(".image_container__");
-        const container__image = document.querySelector(".image_div");
-        const span = document.querySelector("span")
-        const inputFile = document.getElementById("file");
-        const image = document.querySelector(".image")
+        const container__elem = $(".image_container__");
+              container__image = $(".image_div"),
+              span = $("span"),
+              inputFile = $("#file"),
+              image = $(".image"),
+             
         inputFile.addEventListener("change", function () {
             // let file = this.files.item(0).name;
             let file = this.files[0];
@@ -25,7 +28,7 @@ window.addEventListener("DOMContentLoaded",()=>{
                 span.style.display = null;
                 image.style.display = null;
                 image.src = "";
-        
+                return false
             }
         })
     })()
